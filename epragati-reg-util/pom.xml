@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.epragati</groupId>
+	<artifactId>epragati-reg-util</artifactId>
+	<packaging>jar</packaging>
+
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<apache-commons-version>3.3.2</apache-commons-version>
+		<apache-commons-codec-version>1.10</apache-commons-codec-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<parent>
+		<groupId>org.springframework</groupId>
+		<artifactId>epragati-rta-reg</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<name>Epragati Registration Util</name>
+	<description>Epragati Registration Util</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${apache-commons-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>${apache-commons-codec-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+		<!-- <dependency> <groupId>org.epragati</groupId> <artifactId>epragati-reg-services</artifactId> 
+			<version>1.0.0</version> </dependency> -->
+		<!-- <dependency> <groupId>org.epragati</groupId> <artifactId>epragati-activemq</artifactId> 
+			<version>0.0.1-SNAPSHOT</version> </dependency> -->
+		<!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+		<!-- <dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.2</version>
+		</dependency> -->
+
+		<!-- <dependency>
+			<groupId>org.epragati</groupId>
+			<artifactId>epragati-reg-vo</artifactId>
+			<version>1.0.0</version>
+		</dependency> -->
+	</dependencies>
+
+</project>
